@@ -1,0 +1,54 @@
+export EDITOR="nano"
+
+# Navigation
+alias ll='ls -lAH'
+alias ~='cd ~'
+alias ..='cd ..'
+alias mkcd='mkdir -p "$1" && cd "$1"'
+
+# SSH
+alias ssha='eval $(ssh-agent) && ssh-add'
+
+# Secure
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# Bash
+alias h='history | less'
+
+# System
+alias re='source ~/.bashrc' # Rychlé načtení změn v ~/.bashrc.
+alias c='clear' # Vyčištění terminálu.
+alias du='du -sh' # Zobrazení velikosti adresáře.
+alias df='df -h' # Zobrazení volného místa na disku.
+alias free='free -h' # Člověku čitelné zobrazení volné paměti.
+alias top='htop' # Pokud máte htop nainstalovaný, je lepší než top.
+
+# Network
+alias myip='curl ifconfig.me'
+alias ports='sudo netstat -tulpn'
+alias ping='ping -c 5'
+
+# Procesy
+alias psg='ps aux | grep '
+
+# Git
+alias g='git'
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit -m'
+alias gca='git commit -am'
+alias gp='git push'
+alias gpl='git pull'
+alias gl='git log --oneline --decorate --all --graph'
+alias co='git checkout'
+alias br='git branch'
+alias gd='git diff'
+
+# Docker
+alias d='docker'
+
+# Python
+alias py='python3'
+alias nr='npm run'
